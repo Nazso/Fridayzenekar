@@ -33,9 +33,43 @@ body {
 
 .main {
     min-height: 37vw;
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     border: 2px solid red;
+}
+
+/* .container {
+    min-height: 100%;
+} */
+
+/* .container .main_container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+} */
+
+.main_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.main-container .main_part {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.main_part {
+    background-color: #555;
+    width: 30%;
+    height: 300px;
+}
+
+.main_part h2 {
+    /* margin: 20px; */
+    text-align: center;
 }
 
 .main h1 {
@@ -59,7 +93,7 @@ body {
 }
 
 .icons img {
-    width: 50px;
+    width: 60%;
 }
 
 .footer {
@@ -70,4 +104,57 @@ body {
     justify-content: space-around;
     align-items: center;
     font-size: larger;
+}
+
+@media only screen and (max-width: 1200px) {
+    .menu {
+        display: block;
+        background-color: rgba(125, 125, 125, 0.4);
+        min-height:max-content;
+        width:fit-content;
+        padding: 5px;
+    }
+
+    .main {
+        /* position: relative; */
+        display: block;
+        margin: auto;
+    }
+
+    .icons {
+        position: static;
+        margin: auto;
+        max-width: 80%;
+        width: 35%;
+        /* padding: 5px; */
+    }
+
+    .main_container {
+        display: block;
+        margin: auto;
+    }
+
+    .main_part {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .icons {
+        position: static;
+        margin: auto;
+        max-width: 80%;
+        width: 55%;
+        /* padding: 5px; */
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer div {
+        margin-top: 5px;
+    }
 }
