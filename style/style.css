@@ -23,6 +23,37 @@ body {
     width: 30%;
 }
 
+.menu a:hover {
+    background-color: rgba(125, 125, 125, 0.8);;
+}
+
+.hamb_menu {
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+.hamb_menu_cont a {
+    display: block;
+    background-color: rgba(125, 125, 125, 0.4);
+    color: var(--color);
+    text-decoration: none;
+    height: 25px;
+}
+
+.hamb_menu_cont a:hover {
+    background-color: rgba(125, 125, 125, 0.8);;
+}
+
+.menu_line {
+    margin: 2px;
+    width: 25px;
+    height: 5px;
+    background-color: red;
+}
+
 .menu a {
     text-decoration: none;
     font-size: larger;
@@ -108,12 +139,37 @@ body {
 
 @media only screen and (max-width: 1200px) {
     .menu {
+        visibility: hidden;
+        /* display: block;
+        background-color: rgba(125, 125, 125, 0.4);
+        min-height:max-content;
+        width:fit-content;
+        padding: 5px; */
+    }
+
+    .hamb_menu {
+        visibility: visible;
+    }
+
+    /* .hamb_menu_cont {
         display: block;
         background-color: rgba(125, 125, 125, 0.4);
         min-height:max-content;
         width:fit-content;
         padding: 5px;
-    }
+    } */
+
+    /* .hamb_menu:hover .hamb_menu_cont {
+        display: block;
+        background-color: rgba(125, 125, 125, 0.4);
+        min-height:max-content;
+        width:fit-content;
+        padding: 5px;
+    } */
+
+    /* .menu_line { */
+        /* visibility: visible; */
+    /* } */
 
     .main {
         /* position: relative; */
