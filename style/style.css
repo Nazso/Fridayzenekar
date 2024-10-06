@@ -31,19 +31,26 @@ body {
     visibility: hidden;
     position: absolute;
     top: 20px;
-    right: 20px;    
+    right: 20px;   
 }
 
+.menu_line_block:hover {
+    background-color: rgba(125, 125, 125, 0.8);
+    }
+    
 .menu_line_block {
-    cursor: pointer;
-    position: absolute;
-    /* top: 100px; */
-    right: 10px;
-}
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        /* z-index: 1;  */
+ }
 
 .hamb_menu_cont {
     position: relative;
-    top: 30px;
+    top: 40px;
     right: 10px;
 }
 
@@ -53,9 +60,7 @@ body {
     color: var(--color);
     text-decoration: none;
     height: 25px;
-    /* position: relative; */
-    /* /* top: 60px;
-    right: 20px; */
+   
 } */
 
 .hamb_menu_cont a:hover {
@@ -186,6 +191,10 @@ body {
     /* .menu_line { */
         /* visibility: visible; */
     /* } */
+
+    .hamb_menu_cont a:hover {
+    background-color: rgba(125, 125, 125, 0.8);
+    }
 
     .main {
         /* position: relative; */
